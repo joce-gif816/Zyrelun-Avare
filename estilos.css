@@ -1,0 +1,249 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: #fff5eb;
+  color: #333333;
+}
+
+header {
+  background-color: #9c3d20;
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #c05621;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  display: block;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #9c3d20;
+  color: #ffd166;
+}
+
+main {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+section {
+  background-color: #ffffff;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(156, 61, 32, 0.15);
+}
+
+section h2 {
+  color: #9c3d20;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid #e07a2d;
+  padding-bottom: 0.5rem;
+}
+
+section h3 {
+  color: #a44a24;
+  margin-bottom: 0.75rem;
+}
+
+section h4 {
+  color: #8d4a2f;
+  margin: 1rem 0 0.5rem;
+}
+
+section p {
+  margin-bottom: 1rem;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+#servicios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+#servicios h2 {
+  width: 100%;
+}
+
+#servicios article {
+  flex: 1 1 280px;
+  background-color: #fff8f0;
+  border: 1px solid #e6b89c;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+#servicios article:hover {
+  transform: translateY(-5px);
+}
+
+#nosotros {
+  display: block;
+}
+
+#nosotros h2 {
+  width: 100%;
+}
+
+#nosotros h3 {
+  margin-top: 1.5rem;
+}
+
+#nosotros ul {
+  margin-top: 1rem;
+}
+
+aside {
+  background-color: #fff1d6;
+  border-left: 5px solid #e07a2d;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 6px;
+}
+
+#contacto {
+  display: block;
+}
+
+#contacto h2 {
+  width: 100%;
+}
+
+#contacto p {
+  margin-bottom: 1rem;
+}
+
+form div {
+  margin-bottom: 1rem;
+}
+
+label {
+  font-weight: bold;
+  color: #9c3d20;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d6a77a;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #e07a2d;
+  box-shadow: 0 0 5px rgba(224, 122, 45, 0.5);
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button[type="submit"] {
+  background-color: #c05621;
+  color: #ffffff;
+}
+
+button:hover,
+button:focus {
+  background-color: #9c3d20;
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: #9c3d20;
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+}
+
+footer h3 {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#inicio,
+#servicios,
+#nosotros,
+#contacto {
+  scroll-margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav a {
+    width: 100%;
+  }
+
+  #servicios {
+    flex-direction: column;
+  }
+
+  #servicios article {
+    flex: 1 1 100%;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+}
